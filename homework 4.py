@@ -51,10 +51,6 @@
     #print(r / int(x))
 #else:
     #print(r)
-#if x:
-    #print(eval(b) / int(x[0]))
-#else:
-    #print(eval(b))
 
 #Ruben
 
