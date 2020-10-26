@@ -75,56 +75,44 @@
                 #break
             #t.append(t[h] + x)
         #break
-        
-#if t:
-    #print(flag,t)
-#else:
-    #print(flag)
+ 
+#print(flag,t if t else flag)
+
 
 #Ruben
 
 #exercise 1
 
-an = []
-xmb = input()
-xmb1,xmb2 = xmb.split(", ")
-for i in range(len(xmb.split(", "))):
-    anun = input().split(",")
-    an.append((anun))
-    print(an)
-stug = input().split(", ")
-for i in stug:
-    for j in an:
-        if i in j:
-            print("Something")
-#l = []
-#for i in range(len(an)):
-    #for j in range(len(an) + i):
-        #l.append(an[i][j])
+#names = []
+#groups = input().split(', ')
+#for i in range(len(groups)):
+    #anun = input().split(",")
+    #names.append((anun))
+#stug = input().split(", ")
+#d = []
+#dic = {}
 #b = []
-#for i in l:
-    #for j in stug:
-        #if j == i:
-            #b.append(j)
-#for i in range(len(b)-1):
-    #if b[i-1] == b[0]:
-        #b.remove(b[i])
-#x = 0
-#y = ""
-#if b[0] in an[0]:
-    #x = str(len(an[0]))
-#elif b in an[1]:
-    #x = str(len(an[1]))
-#if x in xmb1.split(": "):
-    #y = xmb1.split(": ")[0]
-#elif x in xmb2.split(": "):
-    #y = xmb2.split(":")[0]
-#print(b[0],": ",y)
-
-#matem: 3, yandex: 2
-#aleqs,petrov
-#ivanov,aleqs,sidorov
-#ivanov, aleqs
+#for i in stug:
+    #for j in names:
+        #if i in j:
+            #d.append(i)
+#for i in set(d):
+    #dic[i] = d.count(i)
+#minval = min(dic.values())
+#res = [k for k, v in dic.items() if v==minval]
+#for j in names:
+    #if i in j:
+        #subject = len(j)
+#for g in groups:
+    #if int(subject) == int(g.split(': ')[1]):
+        #sub = g.split(': ')[0]
+#for i in sorted(res):
+    #print(i + ': ' + sub)
+    
+    #matemathics: 3, yandex: 2
+    #Alex,Mary
+    #Garry,Alex,Edgar
+    #Garry, Alex
 
 #exercise 2
 
@@ -154,4 +142,6 @@ for i in stug:
 #print_receipt()
 #add_item('pen',150)
 #print_receipt()
+
+
 
