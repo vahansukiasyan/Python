@@ -39,7 +39,7 @@
     #if (q_cords[0] == k_cords[0] or q_cords[1] == k_cords[1] or abs(q_cords[0] - k_cords[0]) == abs(q_cords[1] - k_cords[1])) or (r1_cords[0] == k_cords[0] or r1_cords[1] == k_cords[1]) or (r2_cords[0] == k_cords[0] or r2_cords[1] == k_cords[1]):
         #for i in range(k_cords[0]-1,k_cords[0]+2):
             #for j in range(k_cords[1]-1,k_cords[1]+2):
-                #if 9<i>0 and 9<j>0:
+                #if 9>i>0 and 9>j>0:
                     #if q_cords[0] == i or q_cords[1] == j or abs(q_cords[0] - i) == abs(q_cords[1] - j) or r1_cords[0] == i or r1_cords[1] == j or r2_cords[0] == i or r2_cords[1] == j:
                         #continue
                     #else:
