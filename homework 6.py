@@ -88,3 +88,36 @@
                 #a.append(board[i-1][j+2])
 #print(a)
 
+#exercise 2
+
+chess_board = [
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 1, 0, 1, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 1, 0, 1, 0, 0, 0],
+    [0, 0, 1, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 'Q', 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0]
+]
+
+def pos(chess_board):
+    queen_pos = []
+    for row in chess_board:
+        if 'Q' in row:
+            queen_pos.append(chess_board.index(row))
+            queen_pos.append(row.index('Q'))
+            break
+    return queen_pos
+
+def lines(chessboard, queen_pos):
+    indexes = [0, 0]
+    if chessboard[queen_pos[0]].count(1) == 1:
+        if chessboard[queen_pos[0]].index(1) < chessboard[queen_pos[0]].index('Q'):
+            for i in range(8):
+                if chessboard[queen_pos[0]][i] != 1 and chessboard[queen_pos[0]][i] != 'Q' and chessboard[queen_pos[0]].index(1)<i:
+                    chessboard[queen_pos[0]][i] = 'x'
+        else:
+            for i in range(8):
+                if chessboard[queen_pos[0]][i] != 1 and chessboard[queen_pos[0]][i] != 'Q' and chessboard[queen_pos[0]].index(1)>i:
+                    chessboard[queen_pos[0]][i] = 'x'
