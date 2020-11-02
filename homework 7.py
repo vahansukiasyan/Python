@@ -50,4 +50,4 @@
             
 
 
-get_count_of_rectangles(dict_of_points)
+#get_count_of_rectangles(dict_of_points)
