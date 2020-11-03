@@ -1,3 +1,5 @@
+from itertools import permutations
+
 #Narek
 
 #exercise 1
