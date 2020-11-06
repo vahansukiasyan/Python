@@ -32,14 +32,18 @@
     
 #def non_decreasing_sequence(*numbers):
     #my_list = [*numbers]
-    #for i in range(len(my_list)):
-        #for j in range(len(my_list)):
-            #my_list[i] =  -my_list[i]
-            #my_list[j] =  -my_list[j]
-            #if my_list == sorted(my_list):
-                #return 'Yes',my_list
-            #else:
+    #if my_list == sorted(my_list,reverse = True):
+        #return "Yes",my_list
+    #else:
+        #for i in range(len(my_list)):
+            #for j in range(len(my_list)):
                 #my_list[i] =  -my_list[i]
                 #my_list[j] =  -my_list[j]
-    #return 'No'
-#print(non_decreasing_sequence(0,4,3))    
+                #print(my_list)
+                #if my_list == sorted(my_list):
+                    #return 'Yes',my_list
+                #else:
+                    #my_list[i] =  -my_list[i]
+                    #my_list[j] =  -my_list[j]
+        #return 'No'
+#print(non_decreasing_sequence(7,4,3,2))
