@@ -1,3 +1,5 @@
+from itertools import permutations
+
 #Narek
 
 #exercise 1
@@ -34,20 +36,11 @@
 
 #exercise 2
 
-#dict_of_points =  {'A': (0, 0), 'B': (0, 4), 'C': (2, 0), 'D': (2, 4), 'E': (0, -4), 'F': (2, -4)}
 #def get_count_of_rectangles(dict_of_points):
-    #list1 = list(dict_of_points.keys())
-    #list2 = []
-    #for i in range(len(list1)):
-        #for j in range(i + 1, len(list1)):
-            #if dict_of_points[list1[j]][0] == dict_of_points[list1[i]][0]:
-                #list2.append((list1[i], list1[j]))
-    #for i in range(len(list2)):
-        #for j in range(i+1,len(list2)):
-            #a,b = dict_of_points[list2[i][0]],dict_of_points[list2[i][1]]
-            #c,d = dict_of_points[list2[j][0]],dict_of_points[list2[j][1]]
-            #print(a,b,c,d)
-            
-
-
-get_count_of_rectangles(dict_of_points)
+    #all_variants = list(permutations(dict_of_points.keys(), 4))
+    #correct_variants = []
+    #for variant in all_variants:
+        #if dict_of_points[variant[0]][0] == dict_of_points[variant[1]][0]  and dict_of_points[variant[1]][1] == dict_of_points[variant[2]][1]  and  dict_of_points[variant[2]][0] == dict_of_points[variant[3]][0]  and dict_of_points[variant[0]][1] == dict_of_points[variant[3]][1]:
+            #correct_variants.append(''.join(sorted(list(variant))))
+    #return set(correct_variants)     
+#print(get_count_of_rectangles({'A': (0, 0), 'B': (0, 4), 'C': (2, 0), 'D': (2, 4), 'E': (0, -4), 'F': (2, -4)}))
