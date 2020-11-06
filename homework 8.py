@@ -45,9 +45,13 @@
 
 #exercise 2
     
+
+    
 #def non_decreasing_sequence(*numbers):
     #my_list = [*numbers]
     #if my_list == sorted(my_list,reverse = True):
+        #for i in range(len(my_list)):
+            #my_list[i] = -my_list[i]
         #return "Yes",my_list
     #else:
         #for i in range(len(my_list)):
@@ -61,4 +65,5 @@
                     #my_list[i] =  -my_list[i]
                     #my_list[j] =  -my_list[j]
         #return 'No'
-#print(non_decreasing_sequence(7,4,3,2))   
+#print(non_decreasing_sequence(7,4,3,2))    
+    
