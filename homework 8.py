@@ -3,14 +3,28 @@
 #exercise 1
 
 #def big(a):
-    #return a[-1]*a[-2]*a[-3]
-#print(big(sorted([9,5,8,5,20,1,2,-3,-2,-1,0])))
+    #b = [i for i in a if i<0]
+    #b.sort(reverse = True)
+    #if len(b)<2:
+        #return a[-1]*a[-2]*a[-3]
+    #else:
+        #if a[-1]*a[-2]*a[-3] >= a[-1]*(b[-1]*b[-2]):
+            #return a[-1]*a[-2]*a[-3]
+        #else:
+            #return a[-1]*(b[-1]*b[-2])
+#print(big(sorted([9,5,8,5,20,1,2,-3,-2,0])))
 
 #exercise 2
 
-#def author(auth,auth1):
-#    print(auth,auth1)
-#author("Vahan",auth1=["Vahan",2006])
+#def author(name,**rest):
+    #d = {}
+    #for key,value in rest.items():
+        #if value[0] == name:
+            #d[key] = value[1]
+    #srt_d = sorted((value,key) for (key,value) in d.items())
+    #for i in srt_d:
+        #print(i[1],i[0])
+#author("Karen",auth_1=["Karen",2006],auth_2 = ["Narek",1957],auth_3=["Andrew",1374],auth_4 = ["Karen",1769])
 
 #Ruben
 
@@ -26,7 +40,8 @@
                 #m = [*query_counts][i-1]+ m - k
         #else:
             #return i
-#print(answer_queries(10,5,6))
+#print(answer_queries(1,100))
+
 
 #exercise 2
     
@@ -46,4 +61,4 @@
                     #my_list[i] =  -my_list[i]
                     #my_list[j] =  -my_list[j]
         #return 'No'
-#print(non_decreasing_sequence(7,4,3,2))
+#print(non_decreasing_sequence(7,4,3,2))   
