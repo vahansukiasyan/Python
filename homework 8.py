@@ -17,9 +17,16 @@
 #exercise 1
 
 #def answer_queries(k, *query_counts):
-    #return (sum(query_counts) // k) + 1
-#print(answer_queries(1,5,100))
-
+    #m  = 0
+    #for i in range(1,len([*query_counts])+1):
+        #if [*query_counts][i-1] + m - k  >=0:
+            #if i == len([*query_counts]):
+                #return int((([*query_counts][-1]+m)/k)+i) 
+            #if [*query_counts][i-1]+ m - k > 0:
+                #m = [*query_counts][i-1]+ m - k
+        #else:
+            #return i
+#print(answer_queries(10,5,6))
 
 #exercise 2
     
