@@ -19,15 +19,23 @@
     #if '(' in string:
         #for i in range(len(string)):
             #if string[i] == '(':
-                #start = i
-                
+                #start = i     
             #elif string[i] == ')':
                 #end = i
-        #print(string[:start])
-        #recursive_string(string[:start] + string[start+1:end-1][::-1] + string[end:])
-    #return string
-    
-#print(recursive_string("foo(bar(baz))blim"))
+        #global new
+        #new = string[:start] + string[start+1:end-1][::-1] + string[end-1:]
+        #recursive_string(new)
+    #else:
+        #ne = ''
+        #for i in new:
+            #if i != ')':
+                #ne+=i
+        #print(ne)
+#recursive_string("foo(bar(baz))blim")
+
+#Ruben
+
+#exercise 1
 
 #def buildPalindrome(string):
     #st = ''
