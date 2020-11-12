@@ -22,32 +22,48 @@
                 #start = i     
             #elif string[i] == ')':
                 #end = i
+                #break
         #global new
-        #new = string[:start] + string[start+1:end-1][::-1] + string[end-1:]
+        #new = string[:start] + string[start+1:end][::-1] + string[end+1:]
         #recursive_string(new)
     #else:
-        #ne = ''
-        #for i in new:
-            #if i != ')':
-                #ne+=i
-        #print(ne)
+        #print(new)
 #recursive_string("foo(bar(baz))blim")
 
 #Ruben
 
 #exercise 1
 
-#def buildPalindrome(string):
-    #st = ''
-    #a = string 
+#def panidrome(string):
+    #empty_string = ''
+    #default_string = string 
     #for i in range(len(string)):
-        #if a != a[::-1]:
+        #if default_string != default_string[::-1]:
             #if i>0:
-                #a = string
-            #st = st + string[i]
-            #a+=st[::-1]
-    #return a           
-#a = "abcd"
-#print(buildPalindrome(a))
+                #default_string = string
+            #empty_string = empty_string + string[i]
+            #default_string+=empty_string[::-1]
+    #return default_string           
+#default_string = "abbab"
+#print(panidrome(default_string))
             
-            
+#a = set()  
+#x = 0   
+#def all_increasing_sequences(k,n,x,l):   
+    #if x == n:
+        #a.add(tuple([k for k in l]))
+    #else:
+        #i = 1 if x == 0 else l[x - 1] + 1
+        #x += 1    
+        #while i <= k: 
+            #l[x - 1] = i
+            #all_increasing_sequences(k,n,x,l)
+            #i += 1
+        #x -= 1  
+        
+#def all_increasing_sequences_print(n,k): 
+    #l = [0] * n
+    #all_increasing_sequences(k, n, x, l)
+    #return a
+        
+#print(all_increasing_sequences_print(3,5))
