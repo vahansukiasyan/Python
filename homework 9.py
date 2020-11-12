@@ -46,6 +46,7 @@
     #return default_string           
 #default_string = "abbab"
 #print(panidrome(default_string))
+<<<<<<< HEAD
             
 #a = set()  
 #x = 0   
@@ -67,3 +68,27 @@
     #return a
         
 #print(all_increasing_sequences_print(3,5))
+=======
+
+#exercise 2
+
+#a = set()  
+#index_of = 0   
+#def all_increasing_sequences(k,n,index_of,my_list):   
+    #global a
+    #if index_of == n:
+        #a.add(tuple([k for k in my_list]))
+    #else:
+        #i = 1 if index_of == 0 else my_list[index_of - 1] + 1
+        #index_of += 1    
+        #while i <= k: 
+            #my_list[index_of - 1] = i
+            #all_increasing_sequences(k,n,index_of,my_list)
+            #i += 1
+        #index_of -= 1     
+#def print_sequences(n,k): 
+    #my_list = [0] * n
+    #all_increasing_sequences(k, n, index_of, my_list)
+    #return a        
+#print(print_sequences(3,5))
+>>>>>>> bacea668b9cf8a3a88b291a68f19b84be82b8018
