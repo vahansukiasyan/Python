@@ -12,10 +12,10 @@ import pprint
 
 #exercise 2
 
-#def func(lst, num):
-    #ret_vals = []
-    #ret_vals = [(lst[i], num-lst[i]) for i in range(len(lst)) if num - lst[i] in lst]
-    #return list(set(ret_vals))
+#def func(lst, number):
+    #my_values = []
+    #my_values = [(lst[i], number-lst[i]) for i in range(len(lst)) if number - lst[i] in lst]
+    #return list(set(my_values))
 #print(func([5, 2, 2, 5, 3],8))
 
 #Ruben
