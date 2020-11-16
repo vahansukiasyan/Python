@@ -12,12 +12,11 @@ import pprint
 
 #exercise 2
 
-#def sum_nums(x,y):
-    #for i in range(len(x)):
-        #for j in range(i+1,len(x)):
-            #if x[i] + x[j] == y:
-                #print((x[j],x[i]))
-#sum_nums([5,2,2,5,3],8)
+#def func(lst, num):
+    #ret_vals = []
+    #ret_vals = [(lst[i], num-lst[i]) for i in range(len(lst)) if num - lst[i] in lst]
+    #return list(set(ret_vals))
+#print(func([5, 2, 2, 5, 3],8))
 
 #Ruben
 
@@ -58,3 +57,4 @@ import pprint
     #else:
         #return -1
 #print(digitsProduct(450))
+
