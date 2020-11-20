@@ -16,7 +16,7 @@ import pprint
     #my_values = []
     #my_values = [(lst[i], number-lst[i]) for i in range(len(lst)) if number - lst[i] in lst]
     #return list(set(my_values))
-#print(func([5, 2, 2, 5, 3],8))
+#print(func([1,2,2,4,3],8))
 
 #Ruben
 
