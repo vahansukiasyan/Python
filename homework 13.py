@@ -3,26 +3,7 @@
 #exercise 1
 
 def two_strings(str1,str2):
-    d1 = {}
-    list_str1 = [i for i in str1]
-    for i in list_str1:
-        if i in d1:
-            d1[i] += 1  
-        else:
-            d1[i] = list_str1.count(i)
-    d2 = {}
-    list_str2 = [i for i in str2]
-    for i in list_str2:
-        if i in d2:
-            d2[i] += 1 
-        else:
-            d2[i] = list_str2.count(i)   
-    count=0
-    for i in d1.keys():
-        for j in d2.keys():
-            if j != i and d1[i] != d2[i]:
-                return False
-    return True
+    return sorted(str1) == sorted(str2)
 print(two_strings("ajjjbg","ajbbjg"))
 
 #exercise 2
